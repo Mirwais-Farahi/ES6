@@ -7,8 +7,8 @@ const sum = (x, y, z) => {
   return args.reduce((a, b) => a + b, 0);
 }
 */
-const sum = (...args) => args.reduce((a,b) => a+b, 0);
-console.log(sum(10,20));
+const sum = (...args) => args.reduce((a, b) => a + b, 0);
+console.log(sum(10, 20));
 
 // Use the Spread Operator to Evaluate Arrays In-Place:
 // Below use apply() to compute the max value 
@@ -21,18 +21,18 @@ var maximus = Math.max.apply(null, arr); // // return 89
 var spreadMax = Math.max(...arr);
 console.log(spreadMax); // return 89
 
-function sumFunction(x,y,z) {
-    console.log(x+y+z);
+function sumFunction(x, y, z) {
+    console.log(x + y + z);
 }
 
-var sumArray = [1,2,3,4];
+var sumArray = [1, 2, 3, 4];
 sumFunction(...sumArray); // returns 6
 
 //spread operator only work in-place like an argument to a function or in an array literal. The following code will not work
 //var spreadArray = ...arr;
 
 //spread operator in an array literal
-var arr1  = [10,20,30];
+var arr1 = [10, 20, 30];
 var arr2 = [...arr1];
 var arr3 = [5, ...arr1];
 var arr4 = [arr1, arr2, arr3, 40, 50, 60];

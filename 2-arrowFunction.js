@@ -27,11 +27,11 @@ change it to arrow function
 const magic = () => new Date();
 
 //Write Arrow Functions with Parameters:
-const double = (item) => item*2;
+const double = (item) => item * 2;
 console.log(double(3));
 
 //if there is single paramter, we can omit the paranthesis
-const double1 = item => item*2;
+const double1 = item => item * 2;
 console.log(double1(4));
 
 const multiplier = (item, multi) => item * multi;
@@ -49,9 +49,9 @@ function howMany(...args) {
   return "You have passed " + args.length + " arguments.";
 }
 console.log(howMany(0, 1, 2));
-console.log(howMany("string", null, [1, 2, 3], { }));
+console.log(howMany("string", null, [1, 2, 3], {}));
 
 const arrWithRest = (...arr) => arr;
-console.log(arrWithRest(null, [1,2,3], 'mir'));
+console.log(arrWithRest(null, [1, 2, 3], 'mir'));
 
 
